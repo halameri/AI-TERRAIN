@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #004d99;
+    color: white;
+}
+
+nav {
+    display: flex; /* Use flexbox to center the navigation */
+    justify-content: center; /* Center the navigation menu horizontally */
+    align-items: center; /* Center the navigation menu vertically */
+    height: 60px; /* Fixed header height */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for inline styling of list items */
+}
+
+nav ul li {
+    margin: 0 10px; /* Add horizontal margin for spacing between nav items */
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 10px 15px; /* Adjust padding as needed */
+    text-decoration: none;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    background-color: #0073e6;
+}
+
+
+.banner {
+
+    text-align: center; /* Center text content */
+}
+
+.banner img {
+    max-width: 60%; /* Responsive image, max out at the container's width */
+    height: auto; /* Maintain aspect ratio */
+    /* If the image doesn't center with max-width, you can add this */
+    margin: 0 auto; /* Auto margins on the sides will center the image */
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 60%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 60%;
+    height: auto;
+    display: block;
+}
